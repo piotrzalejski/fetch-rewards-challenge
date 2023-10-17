@@ -37,7 +37,7 @@ ___
 ### Python
 - Check to see if python is installed
     ```
-    $python --version
+    $ python --version
     Python 3.11.4
     ```
     If python is not installed you can go to https://www.python.org/downloads/
@@ -47,15 +47,20 @@ ___
     `$ ptyhon -m venv venv`
 - Activate the virtual environment
     - On Windows:
+
         `.\venv\Scripts\activate`
     - on macOS and Linux:
+      
         `$ source venv/bin/activate`
 - Install dependencies from `requirements.txt`
+  
     `$ pip install -r requirements.txt`
 
 ### Running the script
+
     `$ python fetch_coding_challenge.py`
 
 ### Clean up
 - When you're don you can deactivate the virtual environment:
+  
     `$ deactivate`
