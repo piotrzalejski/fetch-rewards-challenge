@@ -107,6 +107,8 @@ async def run(playwright: Playwright) -> None:
             elif second_result == "Right":
                 await select_bar("1")
 
+        assert message == expected, f"\nExpected: {expected} but instead got: {message}"
+
     await play(GROUPS)
     context.close()
     browser.close()
