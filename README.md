@@ -36,31 +36,41 @@ alert message, number of weighing, and list of weighing made.
 ___
 ### Python
 - Check to see if python is installed
-    ```
-    $ python --version
-    Python 3.11.4
-    ```
-    If python is not installed you can go to https://www.python.org/downloads/
-    to download and install
+
+        $ python --version
+        Python 3.11.4
+
+    If python is not installed you can go to https://www.python.org/downloads/ to download and install
 
 - Create a Virtual Environment:
-    `$ ptyhon -m venv venv`
+
+        $ python -m venv venv
+
 - Activate the virtual environment
     - On Windows:
 
-        `.\venv\Scripts\activate`
+            .\venv\Scripts\activate
     - on macOS and Linux:
       
-        `$ source venv/bin/activate`
+            $ source venv/bin/activate
+
 - Install dependencies from `requirements.txt`
   
-    `$ pip install -r requirements.txt`
+        $ pip install -r requirements.txt
+### Pytest-Playwright
+- Verify `pytest-playwright` is installed
+
+        pip show pytest-playwright
+
+- Install the required browsers
+
+        playwright install
 
 ### Running the script
 
-    `$ python fetch_coding_challenge.py`
+    $ python fetch_coding_challenge.py
 
 ### Clean up
 - When you're don you can deactivate the virtual environment:
   
-    `$ deactivate`
+        $ deactivate
